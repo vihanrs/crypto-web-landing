@@ -1,0 +1,75 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.navbar {
+  background-color: $color-secondary;
+  padding-block: 0.6rem;
+  position: relative;
+
+  &__container {
+    @include flex(center, space-between);
+  }
+
+  &__logo img {
+    width: 5rem;
+  }
+
+  ul {
+    @include flex(center);
+    gap: 3rem;
+
+    @include respond(tab-port) {
+      @include flex(center, flex-start, column);
+      gap: 1.2rem;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 2rem;
+      background-color: $color-secondary;
+      width: 100%;
+      border-top: 0.2px solid $color-card;
+      display: none;
+      z-index: 99;
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: $btn-transition;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+
+  &__btns {
+    @include flex(center);
+    gap: 1.5rem;
+
+    a {
+      text-transform: capitalize;
+      color: $color-primary;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      font-size: 2.3rem;
+      color: $color-text;
+    }
+  }
+
+  .show {
+    display: flex;
+  }
+}

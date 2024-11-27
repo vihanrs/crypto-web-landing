@@ -1,0 +1,29 @@
+// variables.scss
+
+// Color Palette
+$color-text: #969696;
+$color-background: #1b1b1b;
+$color-card: #383f3e;
+$color-accent: #3fe8ab;
+$color-accent-hover: #78cdcd;
+$color-border: #383f3e;
+$color-primary: #f6f6f6;
+$color-secondary: #151515;
+
+$gradient-accent: linear-gradient(to right, $color-accent, $color-accent-hover);
+
+// Font Families
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Inter", sans-serif;
+
+// Spacing
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.5rem;
+$spacing-xlarge: 2rem;
+
+// Border Radius
+$border-radius: 0.5rem;
+
+// Transition
+$btn-transition: all 0.3s ease;
