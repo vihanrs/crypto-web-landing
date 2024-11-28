@@ -1,0 +1,52 @@
+@use "../../styles/index" as *;
+
+.pricing {
+  padding-block: 5rem;
+  background-image: url("../../assets/blur-bg.png");
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+
+  @include respond(tab-port) {
+    background: none;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem;
+  }
+
+  &__card {
+    background-color: $color-secondary;
+    text-align: center;
+    padding-block: 4rem;
+    border-radius: 2rem;
+    border: 1px solid $color-secondary;
+  }
+
+  img {
+    margin-inline: auto;
+    width: 5rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    color: $color-accent;
+  }
+}

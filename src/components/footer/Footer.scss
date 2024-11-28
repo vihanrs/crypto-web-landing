@@ -1,0 +1,69 @@
+@use "../../styles/index" as *;
+
+.footer {
+  padding-block: 5rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 4rem 1rem;
+  }
+
+  img {
+    width: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__col:not(:last-child) {
+    a {
+      color: $color-border;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      transition: $btn-transition;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+
+  &__col:not(:first-child) {
+    margin-inline: auto;
+
+    @include respond(phone) {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__icon {
+    padding: 0.7rem;
+    background-color: $color-secondary;
+    display: grid;
+    place-content: center;
+    border-radius: $border-radius;
+    border: 1px solid $color-border;
+    color: $color-text;
+    transition: $btn-transition;
+
+    &:hover {
+      background-color: $gradient-accent;
+      color: $color-secondary;
+    }
+  }
+}
