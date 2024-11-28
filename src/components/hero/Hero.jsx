@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import Mob from "../../assets/mob.png";
+import Mob from "../../assets/Mob.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
