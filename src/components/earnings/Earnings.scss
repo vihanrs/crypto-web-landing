@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@use "../../styles/index" as *;
 
 .earnings {
   padding-block: 5rem;

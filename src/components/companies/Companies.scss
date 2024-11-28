@@ -1,4 +1,4 @@
-@import "../../styles/mixins";
+@use "../../styles/index" as *;
 
 .companies {
   padding-block: 5rem;
