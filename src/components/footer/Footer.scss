@@ -20,9 +20,10 @@
     margin-bottom: 0.8rem;
   }
 
+  //appliy all exept the last element
   &__col:not(:last-child) {
     a {
-      color: $color-border;
+      color: $color-text;
       text-transform: uppercase;
       display: block;
       margin-top: 0.5rem;
@@ -30,7 +31,7 @@
       transition: $btn-transition;
 
       &:hover {
-        color: $color-text;
+        color: $color-primary;
       }
     }
   }
@@ -45,10 +46,13 @@
   }
 
   &__icons {
-    display: flex;
-    align-items: center;
+    @include flex();
     flex-wrap: wrap;
     gap: 1rem;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
   }
 
   &__icon {
@@ -62,8 +66,8 @@
     transition: $btn-transition;
 
     &:hover {
-      background-color: $gradient-accent;
-      color: $color-secondary;
+      background: $gradient-accent;
+      color: $color-primary;
     }
   }
 }
