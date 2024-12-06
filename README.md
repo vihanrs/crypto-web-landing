@@ -6,7 +6,7 @@ A modern and responsive landing page designed for CryptoCode, a cutting-edge cry
 
 ## 🌐 Live Demo
 
-Take a look the live demo here 👉 https://vercel.com/vihan-rs-projects/crypto-web-landing
+Take a look the live demo here 👉 https://crypto-web-landing.vercel.app/
 
 ## 🛠️ Tech Stack
 
